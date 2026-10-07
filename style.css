@@ -1,0 +1,162 @@
+:root {
+  --cream: #f5ede3;
+  --terracotta: #c45c3e;
+  --ink: #2a1c14;
+  --ink-soft: #5b4638;
+  --muted: #8a7161;
+  --surface: #fffaf3;
+  --line: rgba(42, 28, 20, 0.12);
+  --shadow: rgba(42, 28, 20, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--cream);
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--cream);
+  font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--terracotta);
+  text-underline-offset: 0.16em;
+}
+
+a:hover {
+  color: #a34730;
+}
+
+.wrap {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2.25rem 1.25rem 4rem;
+}
+
+.site-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.9rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.mark {
+  font-family: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  font-size: 1.7rem;
+  line-height: 1;
+  color: var(--terracotta);
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.95rem;
+}
+
+.site-nav a {
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+
+.site-nav a[aria-current="page"] {
+  color: var(--terracotta);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.kicker {
+  margin: 0 0 0.4rem;
+  color: var(--terracotta);
+  font-size: 0.75rem;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0 0 0.8rem;
+  font-family: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  font-size: clamp(2rem, 5vw, 2.6rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+h2 {
+  margin: 2rem 0 0.45rem;
+  font-family: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+p,
+li {
+  color: var(--ink-soft);
+}
+
+.lede {
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+
+.date {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.2rem;
+}
+
+li + li {
+  margin-top: 0.35rem;
+}
+
+.card {
+  margin-top: 1.75rem;
+  padding: 1.05rem 1.15rem 1.15rem;
+  background: var(--surface);
+  border-radius: 4px;
+  box-shadow: 0 8px 16px var(--shadow);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+footer a {
+  color: var(--ink-soft);
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.92em;
+  color: var(--ink);
+}
