@@ -102,6 +102,14 @@ h2 {
   line-height: 1.25;
 }
 
+h3 {
+  margin: 1.35rem 0 0.35rem;
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.35;
+  color: var(--ink);
+}
+
 p,
 li {
   color: var(--ink-soft);
@@ -118,9 +126,14 @@ li {
   font-size: 0.95rem;
 }
 
-ul {
+ul,
+ol {
   margin: 0.4rem 0 0;
   padding-left: 1.2rem;
+}
+
+ol {
+  color: var(--ink-soft);
 }
 
 li + li {
